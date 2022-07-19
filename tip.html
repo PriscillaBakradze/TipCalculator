@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="tip.css" rel="stylesheet" text="type/css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="favicon (2).ico" rel="icon">
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Tip Calculator</h1><br><br>
+            <div>
+                <h3>Enter Total Bill:</h3>
+                <h2>$<input type="number" id="bill" placeholder="000"></h2><br><br>
+            </div>
+        <div>
+            <h3>Choose Your Tip <span id="percent-symbol">%</span>:</h3>
+            <select id="tip">
+                <option>Select</option>
+                <option>30</option>
+                <option>25</option>
+                <option>20</option>
+                <option>15</option>
+                <option>10</option>
+                <option>5</option>
+            </select><br><br><br>
+        </div>
+            <h3>Split the Bill into:</h3>
+            <input type="number" id="split" placeholder="0"><br>
+            <button id="calculate">Calculate</button><br><br>
+            <div id="invalid"></div>
+        <div id="total">
+            <h3>Total Per Person:</h3>
+            <h2 id="totalTip">$<span id="totalPerPerson">0.00</span></h2>
+        </div>
+    </div>
+
+    <script src="tip.js"></script>
+</body>
+</html>
